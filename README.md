@@ -13,4 +13,5 @@ Use, tweak, and share freely - just give CtrlAltPeter a nod (with a link) when y
 ## Table Of Contents
 
 - Windows
+  - [Windows Slow Boot After SSD Clone](./windows/windows_clone.md)
   - [Windows 11 Install Tweaks](./windows/windows11_install.md)
