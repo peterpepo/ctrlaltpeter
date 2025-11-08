@@ -20,6 +20,6 @@
 
    1. Boot [GParted](../tools/tools.md#references)
    2. Open (double-click) **Terminal**
-   3. `sudo smartmonctl`
+   3. `sudo gsmartcontrol`
 
    
