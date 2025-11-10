@@ -15,6 +15,7 @@ Use, tweak, and share freely - just give CtrlAltPeter a nod (with a link) when y
   - [Disk Utilities](./disk_utilities/disk_utilities.md)
 - Windows
   - [Windows Slow Boot After SSD Clone](./windows/windows_clone.md)
+  - [Windows Tweaks](./windows/windows_tweaks.md)
   - [Windows 11 Install Tweaks](./windows/windows11_install.md)
 - Tools
   - [Tools](./tools/tools.md)
