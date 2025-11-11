@@ -30,3 +30,13 @@
    ![Win11 - disable fast startup](./02_disable_fast_startup.png)
    8. Save changes
    9. Enjoy the fresh kernel each boot
+
+## Use Screen-Capture tool of your choice - Windows 11
+
+   Since Windows11, the Snipping Tool is the default tool for capturing/marking up screenshots. In order to use screenshot tool of your choice (e.g. [Greenshot](../tools/tools.md#references)), the default - snipping tool listening on **PrtScn** must be disabled.
+   
+   In order to disable Windows Snipping tool listening on PrtScn:
+   
+   1. `Win+X` -> `Settings` -> `Accessibility` -> `Keyboard`
+   2. `Use The Print screen to open screen capture` -> `Off`
+   3. Restart Greenshot / your screen capture tool to register it for PrtScn
