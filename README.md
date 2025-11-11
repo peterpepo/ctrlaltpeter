@@ -13,6 +13,8 @@ Use, tweak, and share freely - just give CtrlAltPeter a nod (with a link) when y
 ## Table Of Contents
 - Disk Utilities
   - [Disk Utilities](./disk_utilities/disk_utilities.md)
+- Linux
+  - [Debian-based](./linux/debian.md)
 - Windows
   - [Windows Slow Boot After SSD Clone](./windows/windows_clone.md)
   - [Windows Tweaks](./windows/windows_tweaks.md)
