@@ -13,6 +13,8 @@ Use, tweak, and share freely - just give CtrlAltPeter a nod (with a link) when y
 ## Table Of Contents
 - Disk Utilities
   - [Disk Utilities](./disk_utilities/disk_utilities.md)
+- Git
+  - [Git](./git/git.md)
 - Linux
   - [Debian-based](./linux/debian.md)
 - Windows
@@ -21,3 +23,5 @@ Use, tweak, and share freely - just give CtrlAltPeter a nod (with a link) when y
   - [Windows 11 Install Tweaks](./windows/windows11_install.md)
 - Tools
   - [Tools](./tools/tools.md)
+- Ubuntu
+  - [Ubuntu](./ubuntu/ubuntu.md)
