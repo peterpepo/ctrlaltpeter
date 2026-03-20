@@ -93,6 +93,21 @@ Alternative for awesome password manager [KeePass](https://keepass.info/) - [Kee
 sudo apt install keepassxc
 ```
 
+## Naps2
+Source: https://www.naps2.com/linux-scanning
+
+```
+# Download the NAPS2 public key
+curl -fsSL https://www.naps2.com/naps2-public.pgp | sudo gpg --dearmor -o /etc/apt/keyrings/naps2.gpg
+
+# Add NAPS2 as an Apt source
+echo "deb [signed-by=/etc/apt/keyrings/naps2.gpg] https://downloads.naps2.com ./" | sudo tee /etc/apt/sources.list.d/naps2.list >/dev/null
+
+# Install NAPS2
+sudo apt update
+sudo apt install naps2
+```
+
 ## Virtualbox
 Inspired by:
   - https://www.virtualbox.org/wiki/Linux_Downloads
@@ -111,4 +126,19 @@ apt-cache search virtualbox-
 
 # 4. Install latest release
 sudo apt install virtualbox-7.2
+
+# 5. Add current user to vboxusers (Allow user to use USB from guests)
+sudo usermod -aG vboxusers $USER
+
+# Apply new group without need to restart
+newgrp vboxusers
+
+# 6. Download latest Extension Pack (Optional) - check virtualbox site for latest link
+cd ~/data/downloads
+wget https://download.virtualbox.org/virtualbox/7.2.6/Oracle_VirtualBox_Extension_Pack-7.2.6.vbox-extpack
+
+sudo vboxmanage extpack install Oracle_VirtualBox_Extension_Pack-7.2.6.vbox-extpack
+
+# 7. Reboot (to make USB enumeration work) - otherwise USB enum works from command line, but not from gui
+sudo reboot
 ```
