@@ -1,6 +1,6 @@
 # Ubuntu journey 2026
 The object of this section is to document my Ubuntu 24.04.4 LTS journey on a desktop in 2026.
-It shows what and how needs to be installed including issues I face along the way.
+It shows what and how needs to be installed including challenges I face along the way.
 
 ## Asus PCE-AC68 / broadcom bcm4360
 Default broadcom-sta-dkms fails to compile with the latest kernel. Specific version from restricted repository must be installed instead. This version is shipped with Ubuntu 25.10
@@ -33,8 +33,13 @@ Add Flatpak support to Ubuntu.
 Source: https://flatpak.org/setup/Ubuntu
 
 ```
-sudo apt install flatpak gnome-software-plugin-flatpak
+sudo apt install flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+# Optional - Enable flatpaks search in Ubuntu Software center
+# One must install using command line if this plugin is ommited
+sudo apt install gnome-software-plugin-flatpak
+
 sudo reboot
 ```
 
@@ -68,7 +73,10 @@ sudo update-grub
 
 ## Remove duplicate boot entries in UEFI
 After multiple install attemps, I ended up with duplicate entries in UEFI.
-Note: Ubuntu installs two bootloaders shim and grubx64. Shim is for Secureboot enabled installs, while grubx64 for normal. In reality shim chainloads grubx64. This is by design. My machine had multiple grubx64 entries poitning to same file.
+
+Note: Ubuntu installs two bootloaders shim and grubx64. Shim is for Secureboot enabled installs, while grubx64 for normal. In reality shim chainloads grubx64. This is by design.
+
+My machine had multiple grubx64 entries pointing to same file.
 
 ```
 # List entries (and find duplicate, pointing to same file)
