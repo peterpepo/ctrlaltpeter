@@ -21,6 +21,7 @@ Use, tweak, and share freely - just give CtrlAltPeter a nod (with a link) when y
   - [Windows Slow Boot After SSD Clone](./windows/windows_clone.md)
   - [Windows Tweaks](./windows/windows_tweaks.md)
   - [Windows 11 Install Tweaks](./windows/windows11_install.md)
+  - [VirtualBox](./windows/virtualbox.md)
 - Tools
   - [Tools](./tools/tools.md)
 - Ubuntu
