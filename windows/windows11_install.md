@@ -37,5 +37,5 @@
    5. Click it and proceed with install
 
 ## Note
-   - All the tweaks has been tested and proved working with `Win11_25H2_English_x64.iso` downloaded on `2025-10-15`
+   - All the tweaks has been tested and proved working with `Win11_25H2_English_x64.iso` downloaded on `2026-03-19`
    - There have been articles mentioning `oobe\bypassnro` no longer effective - which wasn't true for my most recent install. In such case, one might try `start ms-cxh:localonly` instead
