@@ -41,6 +41,25 @@
    2. `Use The Print screen to open screen capture` -> `Off`
    3. Restart Greenshot / your screen capture tool to register it for PrtScn
 
+## Take Ownership of Files from previous install
+Sometimes after a reinstallation files on non-system drive (e.g. D:/ data drive) become read-only due to file permissions issues. These files are still owned by user from previous os/installation. One must take ownership and reset file permissions on these files to become writable again. 
+
+Please use only on single user installations, where the user currently logged in should become owner of the files.
+
+Open Terminal `Start -> run -> cmd -> ctrl+shift+enter (run as admin)`
+```
+# 1. Take ownership (current user of all folders/files on drive)
+takeown /f D:\ /r /d y
+ 
+# 2. Reset permissions for all files/folders - it removes all permissions, but the owner has full access, thus the runner (from 1st step can access them). Note the path in UNC format. icacls would fail on long file names otherwise (>260 chars)
+icacls \\?\D:\ /reset /t /c
+   
+# 3. Previous Commands affected Recycler bin, which is now "corrupted"
+#    1. Delete it from affected drive, or
+#    2. Answer yes to prompt "Recycler is corrupted, do you want to empty it" popping up whenever an operation on given drive is performed.
+```
+
+
 ## After-Installation
 
 ### Cleanup
