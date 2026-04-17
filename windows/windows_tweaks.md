@@ -103,6 +103,8 @@ Redirect `Downloads/Documents/Pictures/Music/Videos` folders to another drive.
 - Small Desktop Icons `Desktop -> Right Click -> View -> Small Icons`
 - DNS
   - `Win + R -> control -> Network and Sharing Center -> Change adapter settings -> Ethernet/Wi-Fi -> Right Click -> Internet Protocol Version 4 (TCP/IPv4) -> Use the following DNS server addresses: -> point to local adguardhome/pi-hole`
+- Disable Snap Suggestions
+  - `Win + X -> Settings -> System -> Multitasking -> When I snap a window, suggest what I can snap next to it -> uncheck`
 
 ### Install / Useful Apps
 
@@ -147,6 +149,9 @@ List of useful apps:
   - Download: https://git-scm.com/
 - KeePass
   - Download: https://keepass.info/index.html
+- NAPS2
+  - Not Another PDF Scanner - scanning tool with advanced merging/croping/document creation options
+  - Download: https://www.naps2.com/
 - Notepad++
   - Download: https://notepad-plus-plus.org/downloads/
 - PortfolioPerformance
