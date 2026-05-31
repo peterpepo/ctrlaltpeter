@@ -31,6 +31,14 @@
    8. Save changes
    9. Enjoy the fresh kernel each boot
 
+## Disable "Finish setting up your device" prompt (Windows 11)
+
+1. Open **Settings** (`Win + I`)
+2. Go to:
+   **System -> Notifications -> Additional settings**
+3. Turn OFF:
+   - **Suggest ways to get the most out of Windows and finish setting up this device**
+
 ## Use Screen-Capture tool of your choice - Windows 11
 
    Since Windows11, the Snipping Tool is the default tool for capturing/marking up screenshots. In order to use screenshot tool of your choice (e.g. [Greenshot](../tools/tools.md#references)), the default - snipping tool listening on **PrtScn** must be disabled.
